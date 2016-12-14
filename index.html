@@ -27,12 +27,7 @@
 
   <body>
 	<sp-navbar></sp-navbar>
-	<div class="container">
-		
-		<div class="starter-template">
-			<h1>Under construction</h1>
-			<p class="lead">Content coming soon!</p>
-		</div>
+	<div id="content">
 
 	</div><!-- /.container -->
 
@@ -44,9 +39,16 @@
 	<script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
 	<script src="./js/bootstrap-sp.min.js"></script>
 	<!-- include riot.js -->
-	<script src="https://cdn.jsdelivr.net/riot/2.6/riot+compiler.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/riot/3.0/riot.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/riot-route/3.0.0/route.min.js"></script>
 	<!-- include the tags -->
-	<script type="riot/tag" src="./tags/sp-navbar.tag"></script>
-	<script>riot.mount('*')</script>
+	<script src="./js/all-tags.js"></script>
+	<!-- include routing -->
+	<script src="./js/routes.js"></script>
+	<!-- mount normally -->
+	<script>
+	  riot.mount('*');
+      route(handler);
+    </script>
   </body>
 </html>
