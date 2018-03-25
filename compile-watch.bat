@@ -1,0 +1,1 @@
+cmd /k riot -w tags js/all-tags.js
