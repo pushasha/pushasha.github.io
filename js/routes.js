@@ -36,5 +36,6 @@ routes.notfound = function(id, action) {
   mountPage('not-found-page', "404");
 }
 
-
-
+routes.styletest = function(id, action) {
+    mountPage('style-test-page', "Style Test");
+}
