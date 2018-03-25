@@ -1,0 +1,5 @@
+Have riot watch and compile in real time:
+riot -w tags js/all-tags.js
+
+To have riot compile all tags at once, without watch:
+riot tags js/all-tags.js
