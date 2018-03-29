@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="JavaScriptLibraryMappings">
+    <file url="PROJECT" libraries="{@types/jquery, @types/riotjs, bootstrap, html5shiv, jquery.magnific-popup, jquery.sticky, respond, riot, route}" />
+  </component>
+</project>

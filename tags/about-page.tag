@@ -1,5 +1,5 @@
 <about-page>
-    <div class="starter-template">
+    <div class="container">
         <h1>About</h1>
         <p class="lead">Content coming soon!</p>
     </div>
