@@ -1,0 +1,74 @@
+footer {
+  padding-top: 100px;
+  background-color: $color-dark-gray;
+  flex-shrink: 0;
+}
+
+.single-footer-widget {
+  ::-moz-selection { /* Code for Firefox */
+    background-color: #191919 !important;
+    color: $color-text;
+  }
+  ::selection {
+    background-color: #191919 !important;
+    color: $color-text;
+  }
+  ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color: $color-text;
+    font-weight: 300;
+  }
+  :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: $color-text;
+    opacity: 1;
+    font-weight: 300;
+  }
+  ::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: $color-text;
+    opacity: 1;
+    font-weight: 300;
+  }
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: $color-text;
+    font-weight: 300;
+  }
+  ::-ms-input-placeholder { /* Microsoft Edge */
+    color: $color-text;
+    font-weight: 300;
+  }
+
+  @include media-breakpoint-down(md) {
+    margin-bottom: 30px;
+  }
+}
+
+.footer-social {
+  a {
+    padding-right: 25px;
+    @include transition();
+    &:hover {
+      i {
+        @extend .p1-gradient-color;
+      }
+    }
+  }
+  i {
+    color: #cccccc;
+    @include transition();
+  }
+  @include media-breakpoint-down(md) {
+    text-align: left;
+  }
+}
+
+@media(max-width: 800px) {
+  .social-widget {
+    margin-top: 30px;
+  }
+}
+
+.copyright-text {
+  padding-top: 20px;
+  a, i {
+    color: $color-primary;
+  }
+}

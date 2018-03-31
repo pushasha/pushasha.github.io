@@ -1,4 +1,14 @@
-// COLORS
+// Directories
+$dir-img: "../../../img";
+
+//    Font Family
+$font-primary: 'Montserrat', sans-serif;
+$font-secondary: 'PT Serif', serif;
+
+/* -------- Color variations -------- */
+// region Colors
+
+$color-off-white: #f1f1f1;
 $color-light-gray: #f9f9ff;
 $color-dark-gray: #222222;
 $color-medium-gray: #777777;
@@ -10,10 +20,16 @@ $color-secondary: #62bdfc;
 $color-title: #222222;
 $color-text: #777777;
 $color-link: #f9f9ff;
-$color-disable: transparentize(#222222, 0.3);
+$color-disable: (#222222, 0.3);
 
 $color-default: #f9f9ff;
 $color-success: #4cd3e3;
 $color-info: #38a4ff;
 $color-warning: #f4e700;
 $color-danger: #f44a40;
+
+// endregion
+
+
+
+
