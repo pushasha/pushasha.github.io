@@ -1,4 +1,4 @@
 <home-page>
-    <sp-banner></sp-banner>
-
+    <sp-banner id="home"></sp-banner>
+    <contact-section></contact-section>
 </home-page>

@@ -26,7 +26,7 @@
 
 <script>
     $(document).ready(function () {
-        $(".default-header").sticky({topSpacing: 0});
+        $("header").sticky({topSpacing: 0, zIndex: 1020});
     });
 
     $(".nav-item a").on("click", function () {

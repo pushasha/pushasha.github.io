@@ -11,6 +11,33 @@ $(document).ready(function () {
     $(".fullscreen").css("height", window_height);
     $(".fitscreen").css("height", fitscreen);
 
+
+    // SCROLL TO ANCHORS
+
+    $("a[href^='#']").click(function(e) {
+        console.log(this.hash);
+        e.preventDefault();
+        scrollToAnchor(this.hash)
+        //alert('works');
+    });
+
+    $(window).on('hashchange', function () {
+        var top = $(window.location.hash).offset().top;
+        $(window).scrollTop(top);
+    });
+
+
+    function scrollToAnchor(hash) {
+        var target = $(hash);
+        target = target.length ? target : $('[name=' + hash.slice(1) +']');
+        if (target.length) {
+            $('html, body').animate({
+                scrollTop: target.offset().top
+            }, 500, 'swing', function(){  window.location.hash = hash; });
+            return false;
+        }
+    }
+
     //-------- Active Sticky Js ----------//
 
     $('.img-pop-up').magnificPopup({

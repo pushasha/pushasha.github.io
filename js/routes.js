@@ -1,7 +1,7 @@
 // ---- ROUTER FUNCTION ----
 var currentTag = null;
 var routes = {};
-const titleSuffix = " | Sarah Plotkin";
+var titleSuffix = " | Sarah Plotkin";
 
 function mountPage(tag, title, options) {
   currentTag && currentTag.unmount(true);
@@ -14,6 +14,7 @@ function handler(collection, id, action) {
   fn ? fn(id, action) : mountPage('not-found-page');
 }
 
+route.base('#!')
 route(handler);
 route.start(true);
 
@@ -22,14 +23,6 @@ route.start(true);
 
 routes.home = function(id, action) {
   mountPage('home-page', "Home");
-}
-
-routes.about = function(id, action) {
-  mountPage('about-page', "About");
-}
-
-routes.contact = function(id, action) {
-  mountPage('contact-page', "Contact");
 }
 
 routes.notfound = function(id, action) {

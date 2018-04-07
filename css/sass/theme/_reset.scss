@@ -375,9 +375,9 @@ td, th {
 
 .text-italic { font-style: italic; }
 
-.text-white { color: #fff; }
+.text-white { color: $color-white; }
 
-.text-black { color: #000; }
+.text-black { color: $color-black; }
 
 .transition { @include transition();}
 

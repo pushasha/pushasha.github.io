@@ -571,7 +571,7 @@ td, th {
 }
 
 .text-white {
-  color: #fff;
+  color: #FFF;
 }
 
 .text-black {
@@ -1668,7 +1668,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-.section-gap {
+section, footer {
   padding: 120px 0;
 }
 
