@@ -1,42 +1,11 @@
 footer {
-  padding-top: 100px;
+  padding: 80px 0;
   background-color: $color-dark-gray;
   flex-shrink: 0;
 }
 
 .single-footer-widget {
-  ::-moz-selection { /* Code for Firefox */
-    background-color: #191919 !important;
-    color: $color-text;
-  }
-  ::selection {
-    background-color: #191919 !important;
-    color: $color-text;
-  }
-  ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
-    color: $color-text;
-    font-weight: 300;
-  }
-  :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-    color: $color-text;
-    opacity: 1;
-    font-weight: 300;
-  }
-  ::-moz-placeholder { /* Mozilla Firefox 19+ */
-    color: $color-text;
-    opacity: 1;
-    font-weight: 300;
-  }
-  :-ms-input-placeholder { /* Internet Explorer 10-11 */
-    color: $color-text;
-    font-weight: 300;
-  }
-  ::-ms-input-placeholder { /* Microsoft Edge */
-    color: $color-text;
-    font-weight: 300;
-  }
-
-  @include media-breakpoint-down(md) {
+  @include media-breakpoint-down(sm) {
     margin-bottom: 30px;
   }
 }
@@ -57,12 +26,6 @@ footer {
   }
   @include media-breakpoint-down(md) {
     text-align: left;
-  }
-}
-
-@media(max-width: 800px) {
-  .social-widget {
-    margin-top: 30px;
   }
 }
 
