@@ -4,13 +4,19 @@ $header-height: 56px;
   height: $header-height !important;
 }
 
+.is-sticky .default-header {
+  @include transition();
+  background-color: $color-white;
+}
+
 .default-header {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
   z-index: 9;
-  color: $color-white
+  color: $color-white;
+  @extend .p1-gradient-bg;
+  width: 100% !important;
 }
 
 .menu-bar {

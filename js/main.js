@@ -15,17 +15,14 @@ $(document).ready(function () {
     // SCROLL TO ANCHORS
 
     $("a[href^='#']").click(function(e) {
-        console.log(this.hash);
         e.preventDefault();
         scrollToAnchor(this.hash)
-        //alert('works');
     });
 
     $(window).on('hashchange', function () {
         var top = $(window.location.hash).offset().top;
         $(window).scrollTop(top);
     });
-
 
     function scrollToAnchor(hash) {
         var target = $(hash);

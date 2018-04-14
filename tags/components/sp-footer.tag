@@ -10,7 +10,7 @@
                             ut
                             labore dolore magna aliqua.
                         </p>
-                        <p class="copyright-text">Copyright &copy; { currentYear } | All rights reserved
+                        <p class="copyright-text">Sarah Plotkin &copy; { currentYear } | All rights reserved
                         </p>
                     </div>
                 </div>
@@ -19,9 +19,9 @@
                         <h6>Follow Me</h6>
                         <p>Let's be social</p>
                         <div class="footer-social d-flex align-items-center">
-                            <a href="#"><i class="fa fa-facebook"></i></a>
-                            <a href="#"><i class="fa fa-twitter"></i></a>
-                            <a href="#"><i class="fa fa-linkedin"></i></a>
+                            <a href="https://www.linkedin.com/in/splotkin"><i class="fa fa-linkedin"></i></a>
+                            <a href="https://twitter.com/pushasha"><i class="fa fa-twitter"></i></a>
+                            <a href="https://github.com/pushasha"><i class="fa fa-github"></i></a>
                         </div>
                     </div>
                 </div>
