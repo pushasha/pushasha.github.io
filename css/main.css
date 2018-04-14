@@ -1700,6 +1700,10 @@ section, footer {
   }
 }
 
+.about-area, .timeline-area {
+  background-color: #f1f1f1;
+}
+
 .p1-gradient-bg, .generic-banner, .single-feature:hover, .skillbar-bar, .myself-wrap .desc .talk-btn, .banner-area, .dropdown-menu, .primary-btn2:hover, .primary-btn, .default-header {
   background-image: -moz-linear-gradient(0deg, #62bdfc 0%, #8490ff 100%);
   background-image: -webkit-linear-gradient(0deg, #62bdfc 0%, #8490ff 100%);

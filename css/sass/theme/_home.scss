@@ -19,6 +19,10 @@ section, footer {
   }
 }
 
+.about-area, .timeline-area {
+  background-color: $color-off-white;
+}
+
 .p1-gradient-bg {
   background-image: -moz-linear-gradient(0deg, rgb(98, 189, 252) 0%, rgb(132, 144, 255) 100%);
   background-image: -webkit-linear-gradient(0deg, rgb(98, 189, 252) 0%, rgb(132, 144, 255) 100%);
